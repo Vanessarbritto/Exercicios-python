@@ -11,14 +11,11 @@ n3 = float(input(" valor do terceiro produto: R$ "))
 n4 = float(input(" valor do quarto produto: R$ "))
 n5 = float(input(" valor do quinto produto: R$ "))
 
-def somar (n1,n2,n3,n4,n5):
-    soma = n1+n2+n3+n4+n5
-    return soma
+soma = n1+n2+n3+n4+n5
+print(f"total da compra: R$ {soma:.2f}")
 
-soma_total = somar(n1,n2,n3,n4,n5)
+valor_pago = float(input("digite o valor pago: R$ "))
 
-pagamento = float(input("valor do pagamento: R$"))
+troco = valor_pago - soma
 
-troco = pagamento - soma_total
-
-print (f" o troco do cliente é: R${troco}")
+print (f" o troco do cliente é: R${troco:.2f}")
